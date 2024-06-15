@@ -36,3 +36,20 @@ document.getElementById('messageForm').addEventListener('submit', function (even
     alert('Your message has been sent!');
     // Here, add your form submission logic, e.g., sending the data to a server
 });
+
+// JavaScript to toggle the display of the modal
+document.getElementById('quoteButton').addEventListener('click', function() {
+    document.getElementById('quoteModal').style.display = 'block';
+});
+
+document.getElementById('closeButton').addEventListener('click', function() {
+    document.getElementById('quoteModal').style.display = 'none';
+});
+
+// Close the modal when clicking outside of the modal content
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('quoteModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
