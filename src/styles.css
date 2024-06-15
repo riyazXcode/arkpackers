@@ -1,9 +1,72 @@
-/* General Styles */
+/* fonts */
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f0f0f0;
+    overflow: scroll;
 }
 
 /* Navigation Bar */
@@ -11,13 +74,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background:#636363;
     padding: 10px 20px;
+    overflow: hidden;
+    height: 8vh;
 }
 
-.navbar .logo {
-    color: white;
-    font-size: 24px;
+.logo img{
+    width: 6vw;
+    aspect-ratio: 2/1;
+ 
 }
 
 .navbar .nav-links {
@@ -37,12 +103,17 @@ body {
     font-size: 18px;
 }
 
+
 /* Hero Section */
 .hero-section {
-    background: #444;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                  url("../assets/images/hero.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 10vh 20px;
 }
 
 .hero-section h1 {
@@ -54,22 +125,33 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+
 }
 
 .hero-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
+
 }
 
 .hero-content p {
-    max-width: 300px;
+    max-width: 40vw;
+    padding: 10px;
+    font-size:x-large;
+    line-height:1.7;
+}
+
+.hero-section .hero-content{
+    display: flex;
+    font-size: larger;
+
 }
 
 /* Our Services Section */
 .services-section {
-    background: #fff;
     padding: 50px 20px;
     text-align: center;
+    background-size: cover;
 }
 
 .services-section h2 {
@@ -82,7 +164,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+
 }
 
 .service-card {
@@ -90,7 +173,7 @@ body {
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 300px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -352,8 +435,36 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar .nav-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 2.7vw;
+        overflow: scroll;
+    }
+    .hero-section{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                  url("../assets/images/hero.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size:cover;
+    background-position-x:center;
+    }
+    .navbar{
+        height:4vh;
+    }
+    .hero-content p {
+        max-width: 70vw;
+        padding: 10px;
+        font-size: larger;
+    }
+    .navbar .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
     .hero-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .services-cards,
@@ -369,6 +480,27 @@ body {
 }
 
 @media (max-width: 480px) {
+    .navbar .nav-links {
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+    }
+    .navbar{
+        height:4vh;
+    }
+    .hero-section{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                  url("../assets/images/hero.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size:cover;
+    background-position-x:center;
+    }
+    .hero-content p {
+        max-width: 80vw;
+        padding: 10px;
+        font-size: larger;
+    }
     .service-card h3,
     .payment-card h3,
     .contact-info h3 {
