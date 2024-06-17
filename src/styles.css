@@ -72,12 +72,16 @@ body {
 /* Navigation Bar */
 .navbar {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     background:#636363;
     padding: 10px 20px;
     overflow: hidden;
     height: 8vh;
+    width: 98%;
+    z-index: 1000;
+    top: 0;
 }
 
 .logo img{
@@ -101,11 +105,16 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+.navbar .nav-links a:hover{
+    color: #f7ca87;
+    
+}
 
-
+header{
+    margin-top:10vh;
+}
 /* Hero Section */
 .hero-section {
-    
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
                   url("../assets/images/hero.png");
     background-repeat: no-repeat;
@@ -114,7 +123,6 @@ body {
     text-align: center;
     padding: 10vh 20px;
 }
-
 .hero-section h1 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -273,9 +281,9 @@ body {
     color: white;
     font-size: 24px;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     border: none;
-    border-radius: 50%;
+    border-radius: 20%;
     transform: translateY(-50%);
 }
 
@@ -362,6 +370,7 @@ body {
 .contact-info {
     max-width: 300px;
     text-align: left;
+
 }
 
 .contact-info h3 {
@@ -402,8 +411,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footer input,
-.footer textarea {
+.footer input {
     width: 80%;
     max-width: 500px;
     margin-bottom: 10px;
@@ -412,7 +420,16 @@ body {
     border-radius: 4px;
     font-size: 16px;
 }
-
+.footer textarea {
+    width: 80%;
+    height: 10vh;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
 .footer button {
     padding: 10px 20px;
     font-size: 18px;
@@ -434,6 +451,22 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar .logo img{
+        width: 6vh;
+    }
+    .navbar{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        background:#636363;
+        padding: 10px 20px;
+        overflow: hidden;
+        height: 8vh;
+        width: 90%;
+        z-index: 1000;
+        top: 0;
+    }
     .navbar .nav-links li a{
         color: white;
         text-decoration: none;
@@ -441,6 +474,29 @@ body {
         overflow: scroll;
     }
     .hero-section{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                  url("../assets/images/hero.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size:cover;
+    background-position-x:center;
+    
+    }
+    .navbar{
+        height:4vh;
+    }
+    .hero-content p {
+        max-width: 70vw;
+        padding: 10px;
+        font-size: larger;
+    }
+    .navbar .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .hero-section{
+        margin-top: 10%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
                   url("../assets/images/hero.png");
     background-repeat: no-repeat;

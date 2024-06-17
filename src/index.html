@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARK Packers and Movers</title>
+    <link rel="website icon" type="png" href="../assets/images/ARK logo final.JPG">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +53,7 @@
         <ul class="nav-links lato-regular">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Our Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#gallery" onclick="window.location.href='gallery.html'">Gallery</a></li>
             <li><a href="#payments">Payments</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -70,6 +71,7 @@
                 <p align="justify"  class="lato-regular">ARK Packers and Movers was established in 2001 by our founder and chairman, Mr J.Johnson, who was thethird to start an independent moving company in Madurai. Due to the tireless efforts of our founderand his hardworking nature, the company, which was established with three employees, has now grown to fifteen employees within the next three years. As a result of providing safe and hassle-freecustomer service in transporting household items, he has built a loyal customer base. Despite the fact that he is an entrepreneur, he never stopped pushing himself, focusing on making his coworkers into entrepreneurs, and he has influenced nine of his coworkers to start and run successful businesses. It is the main moto of our founder to provide timely and diligent services to our customers.</p>
             </div>
         </div>
+        <h3 class="lato-bold" style="font-size: xx-large;color: rgb(241, 195, 134);">Contact +91 9843412811 </h3>
     </header>
 
     <section id="services" class="services-section">
@@ -130,13 +132,13 @@
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/image1.jpg" alt="Image 1">
+                    <img src="../assets/images/image1.jpg" alt="Image 1" onclick="window.location.href='gallery.html'">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/image2.jpg" alt="Image 2">
+                    <img src="../assets/images/image2.jpg" alt="Image 2" onclick="window.location.href='gallery.html'">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/image3.jpg" alt="Image 3">
+                    <img src="../assets/images/image3.jpg" alt="Image 3" onclick="window.location.href='gallery.html'">
                 </div>
 
             </div>
@@ -149,32 +151,33 @@
         <h2>Accepted Payment Methods</h2>
         <div class="payment-cards">
             <div class="payment-card">
-                <img src="images/credit-card.png" alt="Credit Card">
+                <img src="../assets/images/credit-card.png" alt="Credit Card">
                 <h3>Credit Card</h3>
                 <p>We accept all major credit cards including Visa, MasterCard, and American Express.</p>
             </div>
             <div class="payment-card">
-                <img src="images/debit-card.png" alt="Debit Card">
+                <img src="../assets/images/debit-card.png" alt="Debit Card">
                 <h3>Debit Card</h3>
                 <p>All major debit cards are accepted for a seamless payment experience.</p>
             </div>
             <div class="payment-card">
-                <img src="images/paypal.png" alt="PayPal">
+                <img src="../assets/images/paypal.png" alt="PayPal">
                 <h3>PayPal</h3>
                 <p>Secure and fast payments through PayPal for added convenience.</p>
             </div>
             <div class="payment-card">
-                <img src="images/google-pay.png" alt="Google Pay">
+                <img src="../assets/images/google-pay.png" alt="Google Pay">
                 <h3>Google Pay</h3>
                 <p>Make payments quickly with Google Pay.</p>
             </div>
+            <br>
             <div class="payment-card">
-                <img src="images/upi.png" alt="UPI">
+                <img src="../assets/images/upi.png" alt="UPI">
                 <h3>UPI</h3>
                 <p>Use UPI for direct bank transfers and easy transactions.</p>
             </div>
             <div class="payment-card">
-                <img src="images/net-banking.png" alt="Net Banking">
+                <img src="../assets/images/net-banking.png" alt="Net Banking">
                 <h3>Net Banking</h3>
                 <p>Secure online payments using net banking.</p>
             </div>
@@ -187,10 +190,12 @@
         <div class="contact-content">
             <div class="contact-info">
                 <h3>Address</h3>
+                <p>Antony J</p>
                 <p>ARK Packers and Movers</p>
-                <p>1234 Moving St.,</p>
-                <p>City, State, Zip Code</p>
-                <p>Phone: +91 12345 67890</p>
+                <p>60/12 Nanbargal Street,</p>
+                <p>S.S Colony</p>
+                <p>Madurai - 625016</p>
+                <p>Mobile Number : 9843412811</p>
             </div>
             <div class="contact-map">
                 <iframe
@@ -206,8 +211,10 @@
         <form id="messageForm">
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <textarea  class="lato-regular" id="message" placeholder="Your Message" required></textarea>
+            <br>
+            <br>
+            <button type="submit" class="lato-regular">Send Message</button>
         </form>
         <p>&copy; 2024 ARK Packers and Movers. All rights reserved.</p>
     </footer>
