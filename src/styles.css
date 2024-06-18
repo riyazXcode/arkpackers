@@ -1,3 +1,9 @@
+html{
+    background-color:#636363;
+}
+
+
+
 /* fonts */
 .lato-thin {
     font-family: "Lato", sans-serif;
@@ -111,7 +117,7 @@ body {
 }
 
 header{
-    margin-top:10vh;
+    margin-top:9vh;
 }
 /* Hero Section */
 .hero-section {
@@ -144,7 +150,7 @@ header{
 .hero-content p {
     max-width: 40vw;
     padding: 10px;
-    font-size:x-large;
+    font-size:18px;
     line-height:1.7;
 }
 
@@ -216,7 +222,11 @@ header{
 
 .service-areas-section h2 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    color: #333;
+}
+.service-areas-section h3 {
+    font-size: 28px;
     color: #333;
 }
 
@@ -463,7 +473,7 @@ header{
         padding: 10px 20px;
         overflow: hidden;
         height: 8vh;
-        width: 90%;
+        width: 93%;
         z-index: 1000;
         top: 0;
     }
