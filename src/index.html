@@ -29,6 +29,9 @@
                 
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
                 
                 <label for="service">Service Required:</label>
                 <select id="service" name="service" required>
@@ -38,7 +41,23 @@
                     <option value="packing">Packing</option>
                     <option value="other">Other</option>
                 </select>
-                
+
+                <label for="realocate">Where are you going to realocate?</label>
+                <select name="realocate" id="realocate">
+                    <option value="within">Within City</option>
+                    <option value="between">Between City</option>
+                </select>
+
+                <label for="fromcity">From City:</label>
+                <select name="fromcity" id="fromcity">
+                    <option value="fromcity">Select on Option</option>
+                </select>
+
+                <label for="tocity">To City:</label>
+                <select name="tocity" id="tocity">
+                    <option value="tocity">Select on Option</option>
+                </select>
+
                 <label for="details">Details:</label>
                 <textarea id="details" name="details" rows="4" required></textarea>
                 
